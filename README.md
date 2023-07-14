@@ -57,6 +57,16 @@ classDiagram
         +getHour() Byte
         +getMinute() Byte
         +getSecond() Byte
+        +getNano() Integer
+        +getZoneId() String
+        +toLocalDate() LocalDate
+        +toLocalTime() LocalTime
+        +toLocalDateTime() LocalDateTime
+        +toTimeMillis() Long
+        +copy() Builder
+        +toString() String
+        +hashCode() int
+        +equals(Object) boolean
     }
   ```
 
