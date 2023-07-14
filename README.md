@@ -98,8 +98,8 @@ classDiagram
     class Patient{
          
         +mapById(Collection~Patient~)$ Map&lt;String, Patient&gt;
-        +groupById(final Collection<Patient> patients)$ Map<String, List<Patient>>
-        +getIds(final Collection<Patient> patients)$ List<String>
+        +groupById(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
+        +getIds(Collection~Patient~)$ List~String~
         +groupByFirstName(final Collection<Patient> patients)$ Map<String, List<Patient>>
         +getFirstNames(final Collection<Patient> patients)$ List<String>
         +groupByMiddleName(final Collection<Patient> patients)$ Map<String, List<Patient>>
