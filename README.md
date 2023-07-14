@@ -70,7 +70,20 @@ classDiagram
     }
     
     class FamilyContactInfo{
-        
+        -String id
+        -String patientId
+        -String firstName
+        -String lastName
+        -List~String~ relationshipsToPatient
+        -List~Phone~ phones
+        -FamilyContactInfo(Builder)
+        +getId() String
+        +getPatientId() String
+        +getFirstName() String
+        +getLastName() String
+        +getRelationshipsToPatient() List~String~
+        +getPhones() List~Phone~       
+
         +mapById(Collection~FamilyContactInfo~)$ Map&lt;String, FamilyContactInfo&gt;
         +groupById(Collection~FamilyContactInfo~)$ Map&lt;String, List~FamilyContactInfo~&gt;
         +getIds(Collection~FamilyContactInfo~)$ List~String~
