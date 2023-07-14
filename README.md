@@ -45,6 +45,12 @@ classDiagram
         -Short month
         -Short day
         -Byte hour
+        -Byte minute
+        -Byte second
+        -Integer nano
+        -String zoneId
+        -BirthDateTime(Builder)
+        -checkValidValue(ChronoField, N)$ &lt;N extends Number&gt;
     }
   ```
 
