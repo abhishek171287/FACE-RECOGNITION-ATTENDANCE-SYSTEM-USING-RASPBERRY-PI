@@ -51,6 +51,12 @@ classDiagram
         -String zoneId
         -BirthDateTime(Builder)
         -checkValidValue(ChronoField, N)$ &lt;N extends Number&gt;
+        +getYear() Integer
+        +getMonth() Short
+        +getDay() Short
+        +getHour() Byte
+        +getMinute() Byte
+        +getSecond() Byte
     }
   ```
 
