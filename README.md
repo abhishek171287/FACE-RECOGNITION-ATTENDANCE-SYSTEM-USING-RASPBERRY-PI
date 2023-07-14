@@ -83,7 +83,11 @@ classDiagram
         +getLastName() String
         +getRelationshipsToPatient() List~String~
         +getPhones() List~Phone~       
-
+        +copy() Builder
+        +toString() String
+        public int hashCode()
+        public boolean equals(final Object object)
+        
         +mapById(Collection~FamilyContactInfo~)$ Map&lt;String, FamilyContactInfo&gt;
         +groupById(Collection~FamilyContactInfo~)$ Map&lt;String, List~FamilyContactInfo~&gt;
         +getIds(Collection~FamilyContactInfo~)$ List~String~
