@@ -203,6 +203,27 @@ classDiagram
         -Long priority
         -String type
         -String email
+        -PatientContactInfo(Builder)
+        +getPatientId() String
+        +getStreetLines() List~String~
+        +getFullSameLineStreetAddress() String
+        +getFullMultipleLinesStreetAddress() String
+        +getCity() String
+        +getState() String
+        +getZip() String
+        +getCountry() String
+        +getPhones() List~String~
+        +getPriority() Long
+        +getType() String
+        +getEmail() String
+        +copy() Builder
+        +toString() String
+        +hashCode() int
+        +equals(Object) boolean
+        +groupByPatientId(Collection~PatientContactInfo~)$ Map&lt;String, List~PatientContactInfo~&gt;
+        +getPatientIds(Collection~PatientContactInfo~)$ List~String~
+        +groupByType(Collection~PatientContactInfo~)$ Map&lt;String, List~PatientContactInfo~&gt;
+        +getTypes(Collection~PatientContactInfo~)$ List~String~
     }
   ```
 
