@@ -100,19 +100,19 @@ classDiagram
         +mapById(Collection~Patient~)$ Map&lt;String, Patient&gt;
         +groupById(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
         +getIds(Collection~Patient~)$ List~String~
-        +groupByFirstName(final Collection<Patient> patients)$ Map<String, List<Patient>>
-        +getFirstNames(final Collection<Patient> patients)$ List<String>
-        +groupByMiddleName(final Collection<Patient> patients)$ Map<String, List<Patient>>
-        +getMiddleNames(final Collection<Patient> patients)$ List<String>
-        +groupByLastName(final Collection<Patient> patients)$ Map<String, List<Patient>>
-        +getLastNames(final Collection<Patient> patients)$ List<String>
-        +groupByNameSuffix(final Collection<Patient> patients)$ Map<String, List<Patient>>
-        +getNameSuffixes(final Collection<Patient> patients)$ List<String>
-        +mapByIdentifiers(final Collection<Patient> patients)$ Map<PatientIdentifier, Patient>
-        +groupByIdentifiers(final Collection<Patient> patients)$ Map<PatientIdentifier, List<Patient>>
-        +getIdentifiers(final Collection<Patient> patients)$ List<PatientIdentifier>
-        +groupByBirthDateTime(final Collection<Patient> patients)$ Map<BirthDateTime, List<Patient>>
-        +getBirthDateTimes(final Collection<Patient> patients)$ List<BirthDateTime>
+        +groupByFirstName(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
+        +getFirstNames(Collection~Patient~)$ List~String~
+        +groupByMiddleName(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
+        +getMiddleNames(Collection~Patient~)$ List~String~
+        +groupByLastName(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
+        +getLastNames(Collection~Patient~)$ List~String~
+        +groupByNameSuffix(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
+        +getNameSuffixes(Collection~Patient~)$ List~String~
+        +mapByIdentifiers(Collection~Patient~)$ Map&lt;PatientIdentifier, Patient&gt;
+        +groupByIdentifiers(Collection~Patient~)$ Map&lt;PatientIdentifier, List~Patient~&gt;
+        +getIdentifiers(Collection~Patient~)$ List~PatientIdentifier~
+        +groupByBirthDateTime(Collection~Patient~)$ Map&lt;BirthDateTime, List~Patient~&gt;
+        +getBirthDateTimes(Collection~Patient~)$ List~BirthDateTime~
         
     }
 
