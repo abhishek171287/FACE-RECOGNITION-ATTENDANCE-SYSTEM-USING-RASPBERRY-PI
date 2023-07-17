@@ -87,7 +87,6 @@ classDiagram
         +toString() String
         public int hashCode()
         public boolean equals(final Object object)
-        
         +mapById(Collection~FamilyContactInfo~)$ Map&lt;String, FamilyContactInfo&gt;
         +groupById(Collection~FamilyContactInfo~)$ Map&lt;String, List~FamilyContactInfo~&gt;
         +getIds(Collection~FamilyContactInfo~)$ List~String~
@@ -96,7 +95,31 @@ classDiagram
     }
 
     class Patient{
-         
+        -String id
+        -String firstName
+        -String middleName
+        -String lastName
+        -String nameSuffix
+        -List~PatientIdentifier~ identifiers
+        -BirthDateTime birthDateTime
+        -Gender gender
+        -ContextMap attributes
+        -Patient(Builder)
+        +getId() String
+        +getFirstName() String
+        +getMiddleName() String
+        +getLastName() String
+        +getNameSuffix() String
+        +getIdentifiers() List~PatientIdentifier~
+        +getBirthDateTime() BirthDateTime
+        +getGender() Gender
+        +getAttributes() ContextMap
+        +getAttribute(TypedKey~T~) ~T~
+        +getAttribute(TypedKey~T~, T) ~T~
+        +copy() Builder
+        +toString() String
+        +hashCode() int
+        +equals(Object) boolean
         +mapById(Collection~Patient~)$ Map&lt;String, Patient&gt;
         +groupById(Collection~Patient~)$ Map&lt;String, List~Patient~&gt;
         +getIds(Collection~Patient~)$ List~String~
@@ -113,7 +136,6 @@ classDiagram
         +getIdentifiers(Collection~Patient~)$ List~PatientIdentifier~
         +groupByBirthDateTime(Collection~Patient~)$ Map&lt;BirthDateTime, List~Patient~&gt;
         +getBirthDateTimes(Collection~Patient~)$ List~BirthDateTime~
-        
     }
 
     class Gender{
