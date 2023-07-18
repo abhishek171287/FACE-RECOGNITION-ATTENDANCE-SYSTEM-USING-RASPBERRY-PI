@@ -285,6 +285,24 @@ classDiagram
     Patient *--> Gender : Enumeration
     PatientChangeEvent *--> ChangeType : Enumeration
     FamilyContactInfo "1" *--> "*" Phone : phones\n\n\n\n
+    Patient "1" *--> "*" PatientIdentifier : \n\n\n\n identifiers
+    Patient "1" *--> "1" BirthDateTime : birthDateTime
+    PatientChangeEvent "1" *--> "1" Patient : current
+    PatientChangeEvent "1" *--> "1" Patient : previous [if available]
+    PatientContactDetails "1" *--> "*" PatientContactInfo : patientContactInfo
+    PatientContactDetails "1" *--> "*" Phone : phones
+
+    link Allergy "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/Allergy.java"
+    link Attributes "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/Attributes.java"
+    link BirthDateTime "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/BirthDateTime.java"
+    link FamilyContactInfo "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/FamilyContactInfo.java"
+    link Patient "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/Patient.java"
+    link PatientChangeEvent "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/PatientChangeEvent.java"
+    link PatientContactDetails "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/PatientContactDetails.java"
+    link PatientContactInfo "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/PatientContactInfo.java"
+    link PatientIdentifier "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/PatientIdentifier.java"
+    link Phone "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/Phone.java"
+    link RegisteredFacilityInfo "https://github.cerner.com/ibus-core/ibus-patient-client/blob/master/src/main/java/com/cerner/ibus/patient/model/RegisteredFacilityInfo.java"
 
   ```
 
